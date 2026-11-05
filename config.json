@@ -3,5 +3,6 @@
   "checkIntervalSeconds": 10,
   "playSound": true,
   "openBrowserOnNewListing": true,
+  "discordWebhookUrl": "https://discord.com/api/webhooks/1567918927160283236/StItho8eOwd8Y9A4BQ1T88-xKG8NUgvFtJd8yWdkmfrAUOchvabdHO_ApwwF72WlaF22",
   "ntfyTopic": "crous-zak-2729fc55"
 }

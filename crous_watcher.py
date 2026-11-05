@@ -29,6 +29,7 @@ DEFAULT_INTERVAL = 10
 DEFAULT_PLAY_SOUND = True
 DEFAULT_OPEN_BROWSER = True
 DEFAULT_NTFY_TOPIC = "crous-zak-2729fc55"
+DEFAULT_DISCORD_WEBHOOK = "https://discord.com/api/webhooks/1567918927160283236/StItho8eOwd8Y9A4BQ1T88-xKG8NUgvFtJd8yWdkmfrAUOchvabdHO_ApwwF72WlaF22"
 
 IS_MAC = sys.platform == "darwin"
 
@@ -59,6 +60,7 @@ def load_config():
         "playSound": DEFAULT_PLAY_SOUND,
         "openBrowserOnNewListing": DEFAULT_OPEN_BROWSER,
         "ntfyTopic": os.environ.get("NTFY_TOPIC", DEFAULT_NTFY_TOPIC),
+        "discordWebhookUrl": os.environ.get("DISCORD_WEBHOOK_URL", DEFAULT_DISCORD_WEBHOOK),
     }
     if CONFIG_FILE.exists():
         try:
@@ -74,6 +76,8 @@ def load_config():
                 cfg["openBrowserOnNewListing"] = bool(user_cfg["openBrowserOnNewListing"])
             if user_cfg.get("ntfyTopic") and "NTFY_TOPIC" not in os.environ:
                 cfg["ntfyTopic"] = str(user_cfg["ntfyTopic"]).strip()
+            if user_cfg.get("discordWebhookUrl") and "DISCORD_WEBHOOK_URL" not in os.environ:
+                cfg["discordWebhookUrl"] = str(user_cfg["discordWebhookUrl"]).strip()
         except Exception as e:
             print(f"{COLORS['Yellow']}Warning: Could not parse config.json ({e}), using defaults.{COLORS['Reset']}")
     return cfg
@@ -115,8 +119,48 @@ def send_phone_push(topic: str, title: str, message: str, click_url: str = "", u
         log_message(f"Phone push (ntfy) warning: {e}", "Yellow")
 
 
-def send_notification(title: str, message: str, play_sound: bool = True, ntfy_topic: str = "", url: str = "", urgent: bool = True):
-    # 1. Send phone notification via ntfy.sh
+def send_discord_push(webhook_url: str, title: str, message: str, click_url: str = "", urgent: bool = True):
+    """Send instant mobile push notification via Discord Webhook."""
+    if not webhook_url:
+        return
+    try:
+        prefix = "@everyone 🚨 " if urgent else "ℹ️ "
+        content = f"{prefix}**{title}**\n{message}"
+        if click_url:
+            content += f"\n👉 **Lien direct :** {click_url}"
+        payload = json.dumps({
+            "username": "CROUS Housing Monitor",
+            "content": content,
+        }).encode("utf-8")
+        req = urllib.request.Request(
+            webhook_url,
+            data=payload,
+            headers={
+                "Content-Type": "application/json",
+                "User-Agent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) CROUSWatcher/1.0",
+            },
+            method="POST",
+        )
+        with urllib.request.urlopen(req, timeout=10) as _:
+            pass
+    except Exception as e:
+        log_message(f"Discord webhook warning: {e}", "Yellow")
+
+
+def send_notification(
+    title: str,
+    message: str,
+    play_sound: bool = True,
+    ntfy_topic: str = "",
+    discord_webhook: str = "",
+    url: str = "",
+    urgent: bool = True,
+):
+    # 1. Send instant Discord mobile push notification
+    if discord_webhook:
+        send_discord_push(discord_webhook, title, message, click_url=url, urgent=urgent)
+
+    # 2. Send phone notification via ntfy.sh
     if ntfy_topic:
         send_phone_push(ntfy_topic, title, message, click_url=url, urgent=urgent)
 
@@ -271,18 +315,20 @@ def main():
     play_sound = cfg["playSound"]
     open_browser_on_new = cfg["openBrowserOnNewListing"]
     ntfy_topic = cfg["ntfyTopic"]
+    discord_webhook = cfg["discordWebhookUrl"]
 
     if args.test_notify:
-        log_message(f"Sending test notification to ntfy topic '{ntfy_topic}'...", "Cyan")
+        log_message("Sending test notification to Discord & ntfy...", "Cyan")
         send_notification(
-            "NEW CROUS HOUSING AVAILABLE! (TEST)",
-            "Residence Test CROUS | 350 EUR/mo | 18-20 m²\nCliquez pour ouvrir la page CROUS",
+            "🏠 NEW CROUS HOUSING AVAILABLE! (TEST)",
+            "Residence Test CROUS | 350 EUR/mo | 18-20 m²\n1 Rue du Test, Paris",
             play_sound=play_sound,
             ntfy_topic=ntfy_topic,
+            discord_webhook=discord_webhook,
             url="https://trouverunlogement.lescrous.fr",
             urgent=True,
         )
-        log_message(f"Test sent! Check your phone in the ntfy app subscribed to: {ntfy_topic}", "Green")
+        log_message("Test sent! Check your Discord channel (and ntfy app).", "Green")
         return
 
     port = os.environ.get("PORT")
@@ -293,6 +339,7 @@ def main():
     print(f"{COLORS['Cyan']}      CROUS HOUSING REAL-TIME WATCHER                     {COLORS['Reset']}")
     print(f"{COLORS['Cyan']}=========================================================={COLORS['Reset']}")
     log_message(f"Monitoring CROUS listings every {interval_seconds} seconds...", "Cyan")
+    log_message(f"Discord Webhook: {'Enabled' if discord_webhook else 'Disabled'}", "Green")
     log_message(f"Phone Push Topic (ntfy.sh): {ntfy_topic or 'Disabled'}", "Green")
     log_message(f"Auto-open browser on new listing: {open_browser_on_new}", "Gray")
     log_message(f"Search URL: {search_url}", "Gray")
@@ -357,10 +404,11 @@ def main():
                             msg = f"{item['label']} | {item['rent']} EUR/mo | {item['area']}\n{item['address']}"
                             log_message(f"[NEW HOUSING AVAILABLE] {msg}", "Green")
                             send_notification(
-                                "NEW CROUS HOUSING AVAILABLE!",
+                                "🏠 NEW CROUS HOUSING AVAILABLE!",
                                 msg,
                                 play_sound=play_sound,
                                 ntfy_topic=ntfy_topic,
+                                discord_webhook=discord_webhook,
                                 url=item["url"],
                                 urgent=True,
                             )
@@ -372,10 +420,11 @@ def main():
                             old_label = old_item.get("label") or f"Listing #{item_id}"
                             log_message(f"[LISTING REMOVED / TAKEN] {old_label}", "Red")
                             send_notification(
-                                "CROUS Listing Removed",
+                                "❌ CROUS Listing Removed",
                                 f"{old_label} is no longer available.",
                                 play_sound=play_sound,
                                 ntfy_topic=ntfy_topic,
+                                discord_webhook=discord_webhook,
                                 urgent=False,
                             )
 
@@ -395,6 +444,7 @@ def main():
                         "10 consecutive connection failures to CROUS site.",
                         play_sound=play_sound,
                         ntfy_topic=ntfy_topic,
+                        discord_webhook=discord_webhook,
                         urgent=False,
                     )
 

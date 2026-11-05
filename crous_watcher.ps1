@@ -19,6 +19,7 @@ $IntervalSeconds = 10
 $PlaySound = $true
 $OpenBrowserOnNew = $true
 $NtfyTopic = "crous-zak-2729fc55"
+$DiscordWebhookUrl = "https://discord.com/api/webhooks/1567918927160283236/StItho8eOwd8Y9A4BQ1T88-xKG8NUgvFtJd8yWdkmfrAUOchvabdHO_ApwwF72WlaF22"
 
 # Load config if present
 if (Test-Path $ConfigFile) {
@@ -29,6 +30,7 @@ if (Test-Path $ConfigFile) {
         if ($null -ne $cfg.playSound) { $PlaySound = [bool]$cfg.playSound }
         if ($null -ne $cfg.openBrowserOnNewListing) { $OpenBrowserOnNew = [bool]$cfg.openBrowserOnNewListing }
         if ($cfg.ntfyTopic) { $NtfyTopic = [string]$cfg.ntfyTopic }
+        if ($cfg.discordWebhookUrl) { $DiscordWebhookUrl = [string]$cfg.discordWebhookUrl }
     } catch {
         Write-Warning "Could not parse config.json, using defaults."
     }
@@ -63,6 +65,17 @@ function Send-Toast {
         [string]$Message,
         [string]$Url = ""
     )
+
+    if (-not [string]::IsNullOrWhiteSpace($DiscordWebhookUrl)) {
+        try {
+            $discordContent = "@everyone 🚨 **$Title**`n$Message"
+            if ($Url) { $discordContent += "`n👉 **Lien direct :** $Url" }
+            $payload = @{ username = "CROUS Housing Monitor"; content = $discordContent } | ConvertTo-Json -Compress
+            & curl -s -X POST $DiscordWebhookUrl -H "Content-Type: application/json" -d $payload | Out-Null
+        } catch {
+            Write-Warning "Discord webhook failed: $($_.Exception.Message)"
+        }
+    }
 
     if (-not [string]::IsNullOrWhiteSpace($NtfyTopic)) {
         try {
