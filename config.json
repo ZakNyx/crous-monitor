@@ -1,0 +1,7 @@
+{
+  "searchUrl": "https://trouverunlogement.lescrous.fr/tools/48/search?bounds=1.5573120117187502_49.384160800744986_3.0926513671875004_47.92002350993272",
+  "checkIntervalSeconds": 10,
+  "playSound": true,
+  "openBrowserOnNewListing": true,
+  "ntfyTopic": "crous-zak-2729fc55"
+}
