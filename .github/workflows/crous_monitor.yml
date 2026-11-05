@@ -2,9 +2,9 @@ name: CROUS 24/7 Housing Monitor
 
 on:
   schedule:
-    # Runs automatically every hour as a safety net
-    - cron: '0 * * * *'
-  workflow_dispatch: # Allows manual 1-click start from the GitHub Actions tab
+    # Safety net every 15 minutes
+    - cron: '*/15 * * * *'
+  workflow_dispatch: # Allows manual 1-click start & self-chaining
 
 concurrency:
   group: crous-watcher
@@ -12,24 +12,37 @@ concurrency:
 
 permissions:
   contents: write
+  actions: write
 
 jobs:
   monitor:
     runs-on: ubuntu-latest
-    timeout-minutes: 65
+    # GitHub allows up to 360 minutes (6 hours) per job
+    timeout-minutes: 350
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Run CROUS Watcher for 55 minutes (checks every 10s)
+      - name: Run CROUS Watcher for 5.5 hours (checks every 10s)
         run: |
-          python3 ./crous_watcher.py --max-minutes 55
+          python3 ./crous_watcher.py --max-minutes 330
 
       - name: Save updated state cache
         if: always()
         run: |
+          git pull --rebase origin main || true
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git add crous_state.json
           git diff --staged --quiet || (git commit -m "chore: update crous_state.json [skip ci]" && git push)
 
+      - name: Immediately start next 24/7 run (Self-chain)
+        if: always() && github.event_name != 'cancelled'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          curl -s -X POST \
+            -H "Authorization: Bearer $GH_TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/repos/${{ github.repository }}/actions/workflows/crous_monitor.yml/dispatches" \
+            -d '{"ref":"main"}'
