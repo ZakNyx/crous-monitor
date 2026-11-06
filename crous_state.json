@@ -1,19 +1,11 @@
 {
-  "lastUpdate": "2026-11-06T08:39:41.963569+00:00",
+  "lastUpdate": "2026-11-06T12:02:13.130374+00:00",
   "total": 2,
   "ids": [
     "3006",
     "69"
   ],
   "listings": {
-    "69": {
-      "id": "69",
-      "label": "Evry- Aunettes",
-      "rent": 390.54,
-      "area": "18.42-19.85 m²",
-      "address": "1 Impasse de la Predecelle 91000 EVRY",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/69"
-    },
     "3006": {
       "id": "3006",
       "label": "Orsay-Georges Charpak",
@@ -21,6 +13,14 @@
       "area": "77.34-78.86 m²",
       "address": "Bâtiment 470 Domaine de l’université de Paris Saclay Rue du château 91400 Orsay",
       "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/3006"
+    },
+    "69": {
+      "id": "69",
+      "label": "Evry- Aunettes",
+      "rent": 390.54,
+      "area": "18.42-19.85 m²",
+      "address": "1 Impasse de la Predecelle 91000 EVRY",
+      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/69"
     }
   }
 }
