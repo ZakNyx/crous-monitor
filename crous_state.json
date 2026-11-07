@@ -1,9 +1,7 @@
 {
-  "lastUpdate": "2026-11-07T17:50:29.034738+00:00",
-  "total": 5,
+  "lastUpdate": "2026-11-07T23:20:00.440304+00:00",
+  "total": 3,
   "ids": [
-    "1754",
-    "1780",
     "3006",
     "69",
     "756"
@@ -32,22 +30,6 @@
       "area": "77.34-78.86 m²",
       "address": "Bâtiment 470 Domaine de l’université de Paris Saclay Rue du château 91400 Orsay",
       "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/3006"
-    },
-    "1754": {
-      "id": "1754",
-      "label": "Moissy Cramayel - Alfred Sisley",
-      "rent": 337.0,
-      "area": "23.22-23.22 m²",
-      "address": "106 rue Bajot 77550 Moissy Cramayel",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/1754"
-    },
-    "1780": {
-      "id": "1780",
-      "label": "Lieusaint",
-      "rent": 349.0,
-      "area": "23.875-23.875 m²",
-      "address": "1 rue du Terme Boreal 77127 LIEUSAINT",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/1780"
     }
   }
 }
