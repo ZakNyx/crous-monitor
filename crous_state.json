@@ -1,28 +1,16 @@
 {
-  "lastUpdate": "2026-11-06T19:48:24.997774+00:00",
-  "total": 21,
+  "lastUpdate": "2026-11-07T01:19:39.183321+00:00",
+  "total": 9,
   "ids": [
-    "10",
-    "1022",
     "1046",
-    "1564",
-    "1645",
     "1754",
     "1780",
     "1858",
-    "2000",
-    "2419",
     "2439",
     "2612",
     "3006",
-    "305",
-    "517",
-    "585",
-    "642",
     "69",
-    "756",
-    "786",
-    "862"
+    "756"
   ],
   "listings": {
     "69": {
@@ -33,21 +21,13 @@
       "address": "1 Impasse de la Predecelle 91000 EVRY",
       "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/69"
     },
-    "756": {
-      "id": "756",
-      "label": "Frida Kahlo",
-      "rent": 342.0,
-      "area": "30.1-31.9 m²",
-      "address": "79 Rue Edouard Renard 93000 BOBIGNY",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/756"
-    },
-    "2612": {
-      "id": "2612",
-      "label": "Stains",
-      "rent": 411.0,
-      "area": "24.96-30.72 m²",
-      "address": "38/42 rue du Chemin St Leger 93240 Stains",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2612"
+    "1754": {
+      "id": "1754",
+      "label": "Moissy Cramayel - Alfred Sisley",
+      "rent": 337.0,
+      "area": "23.22-23.22 m²",
+      "address": "106 rue Bajot 77550 Moissy Cramayel",
+      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/1754"
     },
     "1780": {
       "id": "1780",
@@ -57,93 +37,13 @@
       "address": "1 rue du Terme Boreal 77127 LIEUSAINT",
       "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/1780"
     },
-    "517": {
-      "id": "517",
-      "label": "Moissy Cramayel - Alfred Sisley",
-      "rent": 353.0,
-      "area": "18.43-19.52 m²",
-      "address": "106 rue Bajot 77550 Moissy Cramayel",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/517"
-    },
-    "642": {
-      "id": "642",
-      "label": "Champs Sur Marne - Montesquieu",
-      "rent": 303.0,
-      "area": "17.5-17.5 m²",
-      "address": "7 et 7bis Boulevard Copernic 77420 CHAMPS SUR MARNE",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/642"
-    },
-    "2419": {
-      "id": "2419",
-      "label": "Campus",
-      "rent": 453.0,
-      "area": "22.03-30.03 m²",
-      "address": "23 avenue de la Convention 93000 BOBIGNY",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2419"
-    },
-    "862": {
-      "id": "862",
-      "label": "IRD",
-      "rent": 468.0,
-      "area": "18.0-18.0 m²",
-      "address": "17 Rue Lucien Chapelain 93140 BONDY",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/862"
-    },
-    "1046": {
-      "id": "1046",
-      "label": "Cachan",
-      "rent": 399.0,
-      "area": "13.0-14.75 m²",
-      "address": "1/9 rue Anita CONTI Ex : 62/78 rue Camille Desmoulins 94230 Cachan",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/1046"
-    },
-    "585": {
-      "id": "585",
-      "label": "Champs Sur Marne - Montesquieu",
-      "rent": 396.0,
-      "area": "20.0-20.0 m²",
-      "address": "7 et 7bis Boulevard Copernic 77420 CHAMPS SUR MARNE",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/585"
-    },
-    "786": {
-      "id": "786",
-      "label": "Saint Denis - Guynemer",
-      "rent": 427.0,
-      "area": "16.75-21.94 m²",
-      "address": "41 rue Guynemer 93200 Saint Denis",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/786"
-    },
-    "305": {
-      "id": "305",
-      "label": "Epinay Sur Seine",
-      "rent": 392.0,
-      "area": "15.15-17.18 m²",
-      "address": "6, Avenue de la Republique 93800 EPINAY SUR SEINE",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/305"
-    },
-    "1754": {
-      "id": "1754",
-      "label": "Moissy Cramayel - Alfred Sisley",
-      "rent": 337.0,
-      "area": "23.22-23.22 m²",
-      "address": "106 rue Bajot 77550 Moissy Cramayel",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/1754"
-    },
-    "1022": {
-      "id": "1022",
-      "label": "Lognes",
-      "rent": 470.0,
-      "area": "18.0-24.83 m²",
-      "address": "26-28-30 Rue Bouquet 77185 LOGNES",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/1022"
-    },
-    "1645": {
-      "id": "1645",
-      "label": "Torcy",
-      "rent": 403.0,
-      "area": "15.5-18.92 m²",
-      "address": "20, 22, 24 Promenade du Belvedere 77200 TORCY",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/1645"
+    "756": {
+      "id": "756",
+      "label": "Frida Kahlo",
+      "rent": 342.0,
+      "area": "30.1-31.9 m²",
+      "address": "79 Rue Edouard Renard 93000 BOBIGNY",
+      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/756"
     },
     "2439": {
       "id": "2439",
@@ -153,13 +53,13 @@
       "address": "23 avenue de la Convention 93000 BOBIGNY",
       "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2439"
     },
-    "2000": {
-      "id": "2000",
-      "label": "Combs La Ville - Ilot du Bel Air",
-      "rent": 408.0,
-      "area": "17.7-17.7 m²",
-      "address": "20 - 28 rue des Brandons 77380 Combs La Ville",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2000"
+    "2612": {
+      "id": "2612",
+      "label": "Stains",
+      "rent": 411.0,
+      "area": "24.96-30.72 m²",
+      "address": "38/42 rue du Chemin St Leger 93240 Stains",
+      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2612"
     },
     "1858": {
       "id": "1858",
@@ -169,22 +69,6 @@
       "address": "20 - 28 rue des Brandons 77380 Combs La Ville",
       "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/1858"
     },
-    "10": {
-      "id": "10",
-      "label": "Moissy Cramayel - Alfred Sisley",
-      "rent": 275.0,
-      "area": "15.04-15.265 m²",
-      "address": "106 rue Bajot 77550 Moissy Cramayel",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/10"
-    },
-    "1564": {
-      "id": "1564",
-      "label": "Stains",
-      "rent": 400.0,
-      "area": "16.0-31.88 m²",
-      "address": "38/42 rue du Chemin St Leger 93240 Stains",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/1564"
-    },
     "3006": {
       "id": "3006",
       "label": "Orsay-Georges Charpak",
@@ -192,6 +76,14 @@
       "area": "77.34-78.86 m²",
       "address": "Bâtiment 470 Domaine de l’université de Paris Saclay Rue du château 91400 Orsay",
       "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/3006"
+    },
+    "1046": {
+      "id": "1046",
+      "label": "Cachan",
+      "rent": 399.0,
+      "area": "13.0-14.75 m²",
+      "address": "1/9 rue Anita CONTI Ex : 62/78 rue Camille Desmoulins 94230 Cachan",
+      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/1046"
     }
   }
 }
