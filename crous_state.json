@@ -1,18 +1,25 @@
 {
-  "lastUpdate": "2026-11-07T01:19:39.183321+00:00",
-  "total": 9,
+  "lastUpdate": "2026-11-07T02:46:41.408434+00:00",
+  "total": 8,
   "ids": [
     "1046",
     "1754",
     "1780",
     "1858",
     "2439",
-    "2612",
     "3006",
     "69",
     "756"
   ],
   "listings": {
+    "756": {
+      "id": "756",
+      "label": "Frida Kahlo",
+      "rent": 342.0,
+      "area": "30.1-31.9 m²",
+      "address": "79 Rue Edouard Renard 93000 BOBIGNY",
+      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/756"
+    },
     "69": {
       "id": "69",
       "label": "Evry- Aunettes",
@@ -37,14 +44,6 @@
       "address": "1 rue du Terme Boreal 77127 LIEUSAINT",
       "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/1780"
     },
-    "756": {
-      "id": "756",
-      "label": "Frida Kahlo",
-      "rent": 342.0,
-      "area": "30.1-31.9 m²",
-      "address": "79 Rue Edouard Renard 93000 BOBIGNY",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/756"
-    },
     "2439": {
       "id": "2439",
       "label": "Campus",
@@ -53,21 +52,13 @@
       "address": "23 avenue de la Convention 93000 BOBIGNY",
       "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2439"
     },
-    "2612": {
-      "id": "2612",
-      "label": "Stains",
-      "rent": 411.0,
-      "area": "24.96-30.72 m²",
-      "address": "38/42 rue du Chemin St Leger 93240 Stains",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2612"
-    },
-    "1858": {
-      "id": "1858",
-      "label": "Combs La Ville - Ilot du Bel Air",
-      "rent": 408.0,
-      "area": "17.7-26.38 m²",
-      "address": "20 - 28 rue des Brandons 77380 Combs La Ville",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/1858"
+    "1046": {
+      "id": "1046",
+      "label": "Cachan",
+      "rent": 399.0,
+      "area": "13.0-14.75 m²",
+      "address": "1/9 rue Anita CONTI Ex : 62/78 rue Camille Desmoulins 94230 Cachan",
+      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/1046"
     },
     "3006": {
       "id": "3006",
@@ -77,13 +68,13 @@
       "address": "Bâtiment 470 Domaine de l’université de Paris Saclay Rue du château 91400 Orsay",
       "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/3006"
     },
-    "1046": {
-      "id": "1046",
-      "label": "Cachan",
-      "rent": 399.0,
-      "area": "13.0-14.75 m²",
-      "address": "1/9 rue Anita CONTI Ex : 62/78 rue Camille Desmoulins 94230 Cachan",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/1046"
+    "1858": {
+      "id": "1858",
+      "label": "Combs La Ville - Ilot du Bel Air",
+      "rent": 408.0,
+      "area": "17.7-26.38 m²",
+      "address": "20 - 28 rue des Brandons 77380 Combs La Ville",
+      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/1858"
     }
   }
 }
