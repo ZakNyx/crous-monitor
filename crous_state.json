@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-11-09T12:44:52.502673+00:00",
+  "lastUpdate": "2026-11-09T19:11:16.455176+00:00",
   "total": 6,
   "ids": [
     "2699",
@@ -26,14 +26,6 @@
       "address": "1 Impasse de la Predecelle 91000 EVRY",
       "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/69"
     },
-    "2862": {
-      "id": "2862",
-      "label": "Saclay-Jean d'Ormesson",
-      "rent": 353.0,
-      "area": "69.49-70.77 m²",
-      "address": "20, cour Pierre Vasseur 91120 - PALAISEAU",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2862"
-    },
     "2704": {
       "id": "2704",
       "label": "Saclay-George Sand",
@@ -57,6 +49,14 @@
       "area": "77.34-78.86 m²",
       "address": "Bâtiment 470 Domaine de l’université de Paris Saclay Rue du château 91400 Orsay",
       "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/3006"
+    },
+    "2862": {
+      "id": "2862",
+      "label": "Saclay-Jean d'Ormesson",
+      "rent": 353.0,
+      "area": "69.49-70.77 m²",
+      "address": "20, cour Pierre Vasseur 91120 - PALAISEAU",
+      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2862"
     }
   }
 }
