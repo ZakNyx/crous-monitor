@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-11-09T19:38:22.893731+00:00",
+  "lastUpdate": "2026-11-10T01:00:50.532927+00:00",
   "total": 6,
   "ids": [
     "2699",
@@ -26,14 +26,6 @@
       "address": "1 Impasse de la Predecelle 91000 EVRY",
       "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/69"
     },
-    "2704": {
-      "id": "2704",
-      "label": "Saclay-George Sand",
-      "rent": 314.0,
-      "area": "74.6-74.61 m²",
-      "address": "16, rue André Blanc Lapierre 91190 GIF-SUR-YVETTE",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2704"
-    },
     "2699": {
       "id": "2699",
       "label": "Saclay-George Sand",
@@ -42,13 +34,13 @@
       "address": "16, rue André Blanc Lapierre 91190 GIF-SUR-YVETTE",
       "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2699"
     },
-    "3006": {
-      "id": "3006",
-      "label": "Orsay-Georges Charpak",
-      "rent": 366.62,
-      "area": "77.34-78.86 m²",
-      "address": "Bâtiment 470 Domaine de l’université de Paris Saclay Rue du château 91400 Orsay",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/3006"
+    "2704": {
+      "id": "2704",
+      "label": "Saclay-George Sand",
+      "rent": 314.0,
+      "area": "74.6-74.61 m²",
+      "address": "16, rue André Blanc Lapierre 91190 GIF-SUR-YVETTE",
+      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2704"
     },
     "2862": {
       "id": "2862",
@@ -57,6 +49,14 @@
       "area": "69.49-70.77 m²",
       "address": "20, cour Pierre Vasseur 91120 - PALAISEAU",
       "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2862"
+    },
+    "3006": {
+      "id": "3006",
+      "label": "Orsay-Georges Charpak",
+      "rent": 366.62,
+      "area": "77.34-78.86 m²",
+      "address": "Bâtiment 470 Domaine de l’université de Paris Saclay Rue du château 91400 Orsay",
+      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/3006"
     }
   }
 }
