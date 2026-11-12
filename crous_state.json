@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-11-12T11:37:10.587717+00:00",
+  "lastUpdate": "2026-11-12T17:12:46.708130+00:00",
   "total": 7,
   "ids": [
     "2699",
@@ -43,14 +43,6 @@
       "address": "16, rue André Blanc Lapierre 91190 GIF-SUR-YVETTE",
       "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2704"
     },
-    "3006": {
-      "id": "3006",
-      "label": "Orsay-Georges Charpak",
-      "rent": 366.62,
-      "area": "77.34-78.86 m²",
-      "address": "Bâtiment 470 Domaine de l’université de Paris Saclay Rue du château 91400 Orsay",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/3006"
-    },
     "2867": {
       "id": "2867",
       "label": "Evry-Le Bois Guillaume",
@@ -58,6 +50,14 @@
       "area": "25.6-27.4 m²",
       "address": "18 rue du Bois Guillaume 91000 Evry Courcouronnes",
       "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2867"
+    },
+    "3006": {
+      "id": "3006",
+      "label": "Orsay-Georges Charpak",
+      "rent": 366.62,
+      "area": "77.34-78.86 m²",
+      "address": "Bâtiment 470 Domaine de l’université de Paris Saclay Rue du château 91400 Orsay",
+      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/3006"
     },
     "2862": {
       "id": "2862",
