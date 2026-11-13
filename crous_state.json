@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-11-12T23:06:50.741749+00:00",
+  "lastUpdate": "2026-11-13T05:45:18.304791+00:00",
   "total": 7,
   "ids": [
     "2699",
@@ -11,6 +11,14 @@
     "756"
   ],
   "listings": {
+    "756": {
+      "id": "756",
+      "label": "Frida Kahlo",
+      "rent": 342.0,
+      "area": "30.1-31.9 m²",
+      "address": "79 Rue Edouard Renard 93000 BOBIGNY",
+      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/756"
+    },
     "69": {
       "id": "69",
       "label": "Evry- Aunettes",
@@ -35,14 +43,6 @@
       "address": "16, rue André Blanc Lapierre 91190 GIF-SUR-YVETTE",
       "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2704"
     },
-    "756": {
-      "id": "756",
-      "label": "Frida Kahlo",
-      "rent": 342.0,
-      "area": "30.1-31.9 m²",
-      "address": "79 Rue Edouard Renard 93000 BOBIGNY",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/756"
-    },
     "3006": {
       "id": "3006",
       "label": "Orsay-Georges Charpak",
@@ -51,14 +51,6 @@
       "address": "Bâtiment 470 Domaine de l’université de Paris Saclay Rue du château 91400 Orsay",
       "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/3006"
     },
-    "2867": {
-      "id": "2867",
-      "label": "Evry-Le Bois Guillaume",
-      "rent": 420.0,
-      "area": "25.6-27.4 m²",
-      "address": "18 rue du Bois Guillaume 91000 Evry Courcouronnes",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2867"
-    },
     "2862": {
       "id": "2862",
       "label": "Saclay-Jean d'Ormesson",
@@ -66,6 +58,14 @@
       "area": "69.49-70.77 m²",
       "address": "20, cour Pierre Vasseur 91120 - PALAISEAU",
       "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2862"
+    },
+    "2867": {
+      "id": "2867",
+      "label": "Evry-Le Bois Guillaume",
+      "rent": 420.0,
+      "area": "25.6-27.4 m²",
+      "address": "18 rue du Bois Guillaume 91000 Evry Courcouronnes",
+      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2867"
     }
   }
 }
