@@ -1,10 +1,9 @@
 {
-  "lastUpdate": "2026-11-13T11:10:22.789585+00:00",
-  "total": 7,
+  "lastUpdate": "2026-11-13T15:16:13.426714+00:00",
+  "total": 6,
   "ids": [
     "2699",
     "2704",
-    "2862",
     "2867",
     "3006",
     "69",
@@ -19,14 +18,6 @@
       "address": "1 Impasse de la Predecelle 91000 EVRY",
       "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/69"
     },
-    "756": {
-      "id": "756",
-      "label": "Frida Kahlo",
-      "rent": 342.0,
-      "area": "30.1-31.9 m²",
-      "address": "79 Rue Edouard Renard 93000 BOBIGNY",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/756"
-    },
     "2699": {
       "id": "2699",
       "label": "Saclay-George Sand",
@@ -35,21 +26,13 @@
       "address": "16, rue André Blanc Lapierre 91190 GIF-SUR-YVETTE",
       "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2699"
     },
-    "2704": {
-      "id": "2704",
-      "label": "Saclay-George Sand",
-      "rent": 314.0,
-      "area": "74.6-74.61 m²",
-      "address": "16, rue André Blanc Lapierre 91190 GIF-SUR-YVETTE",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2704"
-    },
-    "2862": {
-      "id": "2862",
-      "label": "Saclay-Jean d'Ormesson",
-      "rent": 353.0,
-      "area": "69.49-70.77 m²",
-      "address": "20, cour Pierre Vasseur 91120 - PALAISEAU",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2862"
+    "756": {
+      "id": "756",
+      "label": "Frida Kahlo",
+      "rent": 342.0,
+      "area": "30.1-31.9 m²",
+      "address": "79 Rue Edouard Renard 93000 BOBIGNY",
+      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/756"
     },
     "2867": {
       "id": "2867",
@@ -66,6 +49,14 @@
       "area": "77.34-78.86 m²",
       "address": "Bâtiment 470 Domaine de l’université de Paris Saclay Rue du château 91400 Orsay",
       "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/3006"
+    },
+    "2704": {
+      "id": "2704",
+      "label": "Saclay-George Sand",
+      "rent": 314.0,
+      "area": "74.6-74.61 m²",
+      "address": "16, rue André Blanc Lapierre 91190 GIF-SUR-YVETTE",
+      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2704"
     }
   }
 }
