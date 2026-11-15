@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-11-14T19:41:20.906143+00:00",
+  "lastUpdate": "2026-11-15T01:00:48.386836+00:00",
   "total": 6,
   "ids": [
     "2699",
@@ -26,14 +26,6 @@
       "address": "1 Impasse de la Predecelle 91000 EVRY",
       "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/69"
     },
-    "2867": {
-      "id": "2867",
-      "label": "Evry-Le Bois Guillaume",
-      "rent": 420.0,
-      "area": "25.6-27.4 m²",
-      "address": "18 rue du Bois Guillaume 91000 Evry Courcouronnes",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2867"
-    },
     "2699": {
       "id": "2699",
       "label": "Saclay-George Sand",
@@ -49,6 +41,14 @@
       "area": "74.6-74.61 m²",
       "address": "16, rue André Blanc Lapierre 91190 GIF-SUR-YVETTE",
       "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2704"
+    },
+    "2867": {
+      "id": "2867",
+      "label": "Evry-Le Bois Guillaume",
+      "rent": 420.0,
+      "area": "25.6-27.4 m²",
+      "address": "18 rue du Bois Guillaume 91000 Evry Courcouronnes",
+      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2867"
     },
     "3006": {
       "id": "3006",
