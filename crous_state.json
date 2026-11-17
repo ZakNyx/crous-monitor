@@ -1,20 +1,11 @@
 {
-  "lastUpdate": "2026-11-17T12:34:18.392786+00:00",
-  "total": 3,
+  "lastUpdate": "2026-11-17T16:54:56.704001+00:00",
+  "total": 2,
   "ids": [
-    "2699",
     "2704",
     "3006"
   ],
   "listings": {
-    "2699": {
-      "id": "2699",
-      "label": "Saclay-George Sand",
-      "rent": 348.0,
-      "area": "16.12-24.76 m²",
-      "address": "16, rue André Blanc Lapierre 91190 GIF-SUR-YVETTE",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2699"
-    },
     "3006": {
       "id": "3006",
       "label": "Orsay-Georges Charpak",
