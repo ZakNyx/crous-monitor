@@ -1,20 +1,11 @@
 {
-  "lastUpdate": "2026-11-20T01:17:38.064574+00:00",
-  "total": 3,
+  "lastUpdate": "2026-11-20T04:37:35.214947+00:00",
+  "total": 2,
   "ids": [
-    "1751",
     "2704",
     "3006"
   ],
   "listings": {
-    "1751": {
-      "id": "1751",
-      "label": "Evry- Aunettes",
-      "rent": 285.15,
-      "area": "31.17-31.73 m²",
-      "address": "1 Impasse de la Predecelle 91000 EVRY",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/1751"
-    },
     "2704": {
       "id": "2704",
       "label": "Saclay-George Sand",
