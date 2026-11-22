@@ -1,5 +1,5 @@
 {
-  "lastUpdate": "2026-11-22T01:00:43.351504+00:00",
+  "lastUpdate": "2026-11-22T15:10:13.965708+00:00",
   "total": 3,
   "ids": [
     "119",
@@ -7,14 +7,6 @@
     "3006"
   ],
   "listings": {
-    "119": {
-      "id": "119",
-      "label": "Cergy-Les Chateaux",
-      "rent": 350.23,
-      "area": "17.01-24.35 m²",
-      "address": "QUARTIER ST SYLVERE 95014 CERGY PONTOISE CEDEX",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/119"
-    },
     "2704": {
       "id": "2704",
       "label": "Saclay-George Sand",
@@ -22,6 +14,14 @@
       "area": "74.6-74.61 m²",
       "address": "16, rue André Blanc Lapierre 91190 GIF-SUR-YVETTE",
       "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2704"
+    },
+    "119": {
+      "id": "119",
+      "label": "Cergy-Les Chateaux",
+      "rent": 350.23,
+      "area": "17.01-24.35 m²",
+      "address": "QUARTIER ST SYLVERE 95014 CERGY PONTOISE CEDEX",
+      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/119"
     },
     "3006": {
       "id": "3006",
