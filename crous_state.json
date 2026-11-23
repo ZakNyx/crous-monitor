@@ -1,20 +1,11 @@
 {
-  "lastUpdate": "2026-11-23T08:11:18.300102+00:00",
-  "total": 3,
+  "lastUpdate": "2026-11-23T13:09:40.600178+00:00",
+  "total": 2,
   "ids": [
-    "119",
     "2704",
     "3006"
   ],
   "listings": {
-    "119": {
-      "id": "119",
-      "label": "Cergy-Les Chateaux",
-      "rent": 350.23,
-      "area": "17.01-24.35 m²",
-      "address": "QUARTIER ST SYLVERE 95014 CERGY PONTOISE CEDEX",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/119"
-    },
     "2704": {
       "id": "2704",
       "label": "Saclay-George Sand",
