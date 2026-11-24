@@ -1,11 +1,20 @@
 {
-  "lastUpdate": "2026-11-24T01:00:47.437128+00:00",
-  "total": 2,
+  "lastUpdate": "2026-11-24T11:32:50.857814+00:00",
+  "total": 3,
   "ids": [
+    "2402",
     "2704",
     "3006"
   ],
   "listings": {
+    "3006": {
+      "id": "3006",
+      "label": "Orsay-Georges Charpak",
+      "rent": 366.62,
+      "area": "77.34-78.86 m²",
+      "address": "Bâtiment 470 Domaine de l’université de Paris Saclay Rue du château 91400 Orsay",
+      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/3006"
+    },
     "2704": {
       "id": "2704",
       "label": "Saclay-George Sand",
@@ -14,13 +23,13 @@
       "address": "16, rue André Blanc Lapierre 91190 GIF-SUR-YVETTE",
       "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2704"
     },
-    "3006": {
-      "id": "3006",
-      "label": "Orsay-Georges Charpak",
-      "rent": 366.62,
-      "area": "77.34-78.86 m²",
-      "address": "Bâtiment 470 Domaine de l’université de Paris Saclay Rue du château 91400 Orsay",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/3006"
+    "2402": {
+      "id": "2402",
+      "label": "Campus",
+      "rent": 406.0,
+      "area": "18.97-20.81 m²",
+      "address": "23 avenue de la Convention 93000 BOBIGNY",
+      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2402"
     }
   }
 }
