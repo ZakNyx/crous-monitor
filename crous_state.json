@@ -1,9 +1,8 @@
 {
-  "lastUpdate": "2026-11-24T11:32:50.857814+00:00",
-  "total": 3,
+  "lastUpdate": "2026-11-24T21:10:40.295117+00:00",
+  "total": 2,
   "ids": [
-    "2402",
-    "2704",
+    "2052",
     "3006"
   ],
   "listings": {
@@ -15,21 +14,13 @@
       "address": "Bâtiment 470 Domaine de l’université de Paris Saclay Rue du château 91400 Orsay",
       "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/3006"
     },
-    "2704": {
-      "id": "2704",
-      "label": "Saclay-George Sand",
-      "rent": 314.0,
-      "area": "74.6-74.61 m²",
-      "address": "16, rue André Blanc Lapierre 91190 GIF-SUR-YVETTE",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2704"
-    },
-    "2402": {
-      "id": "2402",
-      "label": "Campus",
-      "rent": 406.0,
-      "area": "18.97-20.81 m²",
-      "address": "23 avenue de la Convention 93000 BOBIGNY",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2402"
+    "2052": {
+      "id": "2052",
+      "label": "Lieusaint",
+      "rent": 376.0,
+      "area": "19.63-20.37 m²",
+      "address": "1 rue du Terme Boreal 77127 LIEUSAINT",
+      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2052"
     }
   }
 }
