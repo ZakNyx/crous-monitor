@@ -1,19 +1,10 @@
 {
-  "lastUpdate": "2026-11-25T01:00:49.365719+00:00",
-  "total": 2,
+  "lastUpdate": "2026-11-25T07:33:00.448681+00:00",
+  "total": 1,
   "ids": [
-    "2052",
     "3006"
   ],
   "listings": {
-    "2052": {
-      "id": "2052",
-      "label": "Lieusaint",
-      "rent": 376.0,
-      "area": "19.63-20.37 m²",
-      "address": "1 rue du Terme Boreal 77127 LIEUSAINT",
-      "url": "https://trouverunlogement.lescrous.fr/tools/48/accommodations/2052"
-    },
     "3006": {
       "id": "3006",
       "label": "Orsay-Georges Charpak",
